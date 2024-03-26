@@ -1,0 +1,31 @@
+name: Deploy to AWS S3
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  AWS_REGION: "eu-central-1"
+  AWS_ACCOUNT_ID: "726572312266" 
+  AWS_IAM_ROLE: "github-actions-role"
+  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/${{ env.AWS_IAM_ROLE }}
+        aws-region: ${{ env.AWS_REGION }}
+
+    - name: Deploy to S3
+      run: |
+        aws s3 sync . s3://sallahdari.com --delete --exclude ".vscode/*"
