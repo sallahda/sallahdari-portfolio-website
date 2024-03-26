@@ -1,0 +1,48 @@
+.about-me-p {
+    font-family: Arial, sans-serif; 
+    font-style: italic;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.tree-diagram {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+.tree-diagram li {
+    display: inline-block;
+}
+  
+.tree-diagram ul {
+    margin-left: 20px;
+}
+
+.inner-header {
+    font-family: monospace;
+    margin: 0;
+}
+
+.header-div {
+    border: 2px solid beige; /* Replace with your desired border color */
+    border-radius: 6px; /* Adjust the border radius to your preference */
+    padding: 12px; /* Add padding to give spacing around the text */
+    display: inline-block; /* This makes the div only as wide as its content */
+}
+
+.skill-list {
+    list-style: none; /* Removes default list styling */
+    padding-left: 0;
+}
+.skill-list li {
+    margin-bottom: 10px; /* Space between items */
+}
+.skill-list .icon {
+    margin-right: 5px; /* Space after the icon */
+}
+.aws-certification {
+    margin-left: 20px; /* Indent for sub-item */
+}
+
+
+  
