@@ -28,4 +28,4 @@ jobs:
 
     - name: Deploy to S3
       run: |
-        aws s3 sync . s3://sallahdari.com --delete --exclude ".vscode/*"
+        aws s3 sync . s3://sallahdari.com --delete --exclude ".vscode/*" --exclude ".github/* --exclude ".git/*"
