@@ -53,14 +53,14 @@ body {
     border-radius: 3px 3px 3px 3px;
     -webkit-border-radius: 3px 3px 3px 3px;
   }
-  .row ul li.html div span { background: #E13C4C; width: 90%; }
-  .row ul li.css div span { background: #ffdb43; width: 90%; }
-  .row ul li.php div span { background: #9D2027; width: 80%; }
-  .row ul li.mysql div span { background: #3498db; width: 75%; }
-  .row ul li.jquery div span { background: #2ecc71; width: 60%; }
-  .row ul li.javascript div span { background: #A94034 }
-  .row ul li.seo div span { background: #FF8137; width: 60%; }
-  .row ul li.unix div span { width: 65%; background: #0CBFB3; }
+  .row ul li.java div span { background: #E13C4C; width: 80%; }
+  .row ul li.python div span { background: #ffdb43; width: 70%; }
+  .row ul li.terraform div span { background: #9D2027; width: 70%; }
+  .row ul li.sql div span { background: #3498db; width: 60%; }
+  .row ul li.aws div span { background: #2ecc71; width: 70%; }
+  .row ul li.javascript div span { background: #A94034; width: 70%; }
+  .row ul li.streamlit div span { background: #FF8137; width: 60%; }
+  .row ul li.git div span { width: 80%; background: #0CBFB3; }
   
   .animated {
     -webkit-animation-duration: 1s;
