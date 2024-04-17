@@ -24,58 +24,56 @@
 }
 
 .header-div {
-    border: 2px solid beige; /* Replace with your desired border color */
-    border-radius: 6px; /* Adjust the border radius to your preference */
-    padding: 12px; /* Add padding to give spacing around the text */
-    display: inline-block; /* This makes the div only as wide as its content */
+    border: 2px solid beige; 
+    border-radius: 6px; 
+    display: inline-block; 
 }
 
 .skill-list {
-    list-style: none; /* Removes default list styling */
+    list-style: none;
     padding-left: 0;
 }
 .skill-list li {
-    margin-bottom: 10px; /* Space between items */
+    margin-bottom: 10px; 
 }
 .skill-list .icon {
-    margin-right: 5px; /* Space after the icon */
+    margin-right: 5px; 
 }
 .aws-certification {
-    margin-left: 20px; /* Indent for sub-item */
+    margin-left: 20px; 
 }
 
 /* Project page */ 
 .project-card {
     display: flex;
     flex-wrap: wrap;
-    background: #f5f5f5; /* Light grey background */
+    background: #f5f5f5; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 20px;
     border-radius: 8px;
     overflow: hidden;
-    max-width: 1200px; /* Maximum width for the project card */
-    margin: 20px auto; /* Centers the card in the page */
+    max-width: 1200px; 
+    margin: 20px auto; 
 }
 
 .project-sidebar {
     flex: 1;
     padding: 20px;
     border-right: 1px solid #eee;
-    max-width: 300px; /* Max width for the sidebar */
+    max-width: 300px;
 }
 
 .project-main {
     flex: 2;
     position: relative;
     padding: 20px;
-    max-width: 900px; /* Max width for the main area */
+    max-width: 900px;
 }
 
 .image-wrapper {
     width: 100%;
-    padding: 5px; /* Adjust as needed */
-    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Example gradient */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4); /* Optional: Adds shadow for depth */
+    padding: 5px; 
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4); 
 }
 
 .image-wrapper img {
@@ -86,7 +84,6 @@
 }
 
 /* Slider Controls */
-
 .slider-control {
     position: absolute;
     top: 50%;
@@ -95,14 +92,20 @@
     font-size: 24px;
     color: #333;
     z-index: 10;
-    width: 40px; /* Fixed width */
-    height: 40px; /* Fixed height */
-    background-color: white; /* White background for the controls */
-    border-radius: 50%; /* Makes the controls circular */
-    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex; 
+    opacity: 0; 
+    transition: opacity 0.4s ease; 
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Adds shadow for depth */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.project-main:hover .slider-control {
+    opacity: 1;
 }
 
 .slider-control.left {
@@ -114,7 +117,7 @@
 }
 
 .slider-control:hover {
-    background-color: #e8e8e8; /* Light grey background on hover for better interaction feedback */
+    background-color: #e8e8e8;
 }
 
 @media (max-width: 768px) {
@@ -128,21 +131,19 @@
     }
 
     .project-main {
-        max-width: none; /* Allows it to expand full width on smaller screens */
+        max-width: none;
     }
 
     .slider-control {
-        font-size: 18px; /* Smaller font size for smaller screens */
-        width: 30px; /* Smaller width */
-        height: 30px; /* Smaller height */
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
     }
 }
-
 /* Contact Form */
-
 .wrapper {
-    background: #fff; /* White background */
-    color: #333; /* Dark text for readability */
+    background: #fff; 
+    color: #333; 
     font-family: Arial, sans-serif;
 }
 
@@ -154,13 +155,13 @@ textarea {
     margin: 6px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Sizing method for padding inclusion */
+    border-radius: 4px;
+    box-sizing: border-box; 
 }
 
 input[type="submit"],
 input[type="reset"] {
-    background-color: #4CAF50; /* Green background */
+    background-color: #4CAF50; 
     color: white;
     margin: 8px 0;
     border: none;
@@ -169,7 +170,7 @@ input[type="reset"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049; 
 }
 
 .field {
