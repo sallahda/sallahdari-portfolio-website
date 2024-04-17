@@ -39,6 +39,7 @@ body {
   }.row ul li em{
     display: block;
     margin-bottom: 15px;
+    color: white;
   }.row ul li div{
     margin-bottom: 35px;
     border-radius: 3px 3px 3px 3px;
@@ -54,13 +55,17 @@ body {
     -webkit-border-radius: 3px 3px 3px 3px;
   }
   .row ul li.java div span { background: #E13C4C; width: 80%; }
-  .row ul li.python div span { background: #ffdb43; width: 70%; }
+  .row ul li.python div span { background: #ffdb43; width: 80%; }
   .row ul li.terraform div span { background: #9D2027; width: 70%; }
-  .row ul li.sql div span { background: #3498db; width: 60%; }
-  .row ul li.aws div span { background: #2ecc71; width: 70%; }
+  .row ul li.sql div span { background: #3498db; width: 70%; }
+  .row ul li.aws div span { background: #2ecc71; width: 80%; }
   .row ul li.javascript div span { background: #A94034; width: 70%; }
   .row ul li.streamlit div span { background: #FF8137; width: 60%; }
   .row ul li.git div span { width: 80%; background: #0CBFB3; }
+  .row ul li.problem-solving div span { width: 70%; background: #9E9764; }
+  .row ul li.teamwork div span { width: 90%; background: #20603D; }
+
+  
   
   .animated {
     -webkit-animation-duration: 1s;
@@ -101,4 +106,6 @@ body {
     display: table;
     clear: both;
   }
+
+  
   

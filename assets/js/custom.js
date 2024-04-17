@@ -1,46 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
+var slideIndex = 0;
+showSlides(slideIndex);
 
-const barCtx = document.getElementById('barChart').getContext('2d');
-const barChart = new Chart(barCtx, {
-  type: 'bar',
-  data: {
-    labels: [
-      'AWS',
-      'Terraform',
-      'Python',
-      'Pandas',
-      'SQL',
-      'Java',
-      'Node.js',
-    ],
-    datasets: [{
-      label: 'Skills',
-      data: [60, 60, 70, 60, 80, 70, 20], // Example data for DevOps skills
-      backgroundColor: 'rgba(255, 159, 64, 0.2)',
-      borderColor: 'rgba(255, 159, 64, 1)',
-      borderWidth: 1
-    }]
-  },
-  options: {
-    indexAxis: 'y',
-    scales: {
-      x: {
-        grid: {
-          color: 'rgba(0, 0, 0, 0.1)',
-          drawBorder: true,
-          drawOnChartArea: true,
-          drawTicks: true,
-        }
-      },
-      y: {
-        grid: {
-          color: 'rgba(0, 0, 0, 0.1)',
-          drawBorder: true,
-          drawOnChartArea: true,
-          drawTicks: true,
-        }
-      }
-    }
+function moveSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.querySelectorAll("#slider img");
+  if (n >= slides.length) { slideIndex = 0 }
+  if (n < 0) { slideIndex = slides.length - 1 }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
-  
-});
+  slides[slideIndex].style.display = "block";
+}
