@@ -138,6 +138,63 @@
     }
 }
 
+/* Contact Form */
+
+.wrapper {
+    background: #fff; /* White background */
+    color: #333; /* Dark text for readability */
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Sizing method for padding inclusion */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.actions {
+    list-style: none;
+    padding: 0;
+}
+
+.actions li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+
 
 
 
