@@ -161,7 +161,7 @@ textarea {
 
 input[type="submit"],
 input[type="reset"] {
-    background-color: #4CAF50; 
+    background-color: darkslategray; 
     color: white;
     margin: 8px 0;
     border: none;
@@ -193,43 +193,31 @@ input[type="submit"]:hover {
     margin-right: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-  /* TESTING*/
-/* Timeline CSS */
 /* Timeline CSS */
 .timeline {
     position: relative;
-    max-width: 1000px; /* Reduced from 1200px */
-    margin: 20px auto; /* Added some margin for spacing */
+    max-width: 1000px; 
+    margin: 20px auto; 
 }
 
-/* Containers around each timeline entry */
+
 .container {
-    padding: 5px 20px; /* Reduced padding for compactness */
+    padding: 5px 20px; 
     position: relative;
     width: 50%;
     left: 0;
 }
 
-/* Timeline entry boxes */
+
 .timeline-entry {
-    padding: 15px 20px; /* Reduced padding inside the entry */
+    padding: 15px 20px; 
     background-color: darkslategray;
     position: relative;
     border-radius: 6px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Position the boxes on the left and right */
+
 .container.left {
     left: 0;
 }
@@ -238,17 +226,17 @@ input[type="submit"]:hover {
     left: 50%;
 }
 
-/* Add arrows to the left and right boxes */
+
 .container.left .timeline-entry::after {
     content: "";
     height: 0;
     width: 0;
     position: absolute;
     top: 50%;
-    right: -15px; /* Adjusted for smaller padding */
+    right: -15px;
     transform: translateY(-50%);
     border-style: solid;
-    border-width: 10px 0 10px 15px; /* Adjust arrow size */
+    border-width: 10px 0 10px 15px; 
     border-color: transparent transparent transparent lightgrey;
 }
 
@@ -258,19 +246,19 @@ input[type="submit"]:hover {
     width: 0;
     position: absolute;
     top: 50%;
-    left: -15px; /* Adjusted for smaller padding */
+    left: -15px;
     transform: translateY(-50%);
     border-style: solid;
-    border-width: 10px 15px 10px 0; /* Adjust arrow size */
+    border-width: 10px 15px 10px 0;
     border-color: transparent lightgrey transparent transparent;
 }
 
-/* Responsive tweaks */
+
 @media (max-width: 600px) {
     .container {
         width: 100%;
         left: 0;
-        padding: 5px 10px; /* Further reduced for very small screens */
+        padding: 5px 10px;
     }
 
     .container.right {
@@ -278,12 +266,26 @@ input[type="submit"]:hover {
     }
 
     .container.right .timeline-entry::after, .container.left .timeline-entry::after {
-        /* Hide arrows on small screens */
+        
         display: none;
     }
 
     .container.right .timeline-entry, .container.left .timeline-entry {
-        border-radius: 6px; /* Maintain border radius consistency */
+        border-radius: 6px;
+    }
+}
+
+.wrapper .inner iframe {
+    width: 80%; 
+    height: 600px;
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper .inner iframe {
+        width: 95%; 
+        height: 400px; 
     }
 }
 
