@@ -86,7 +86,7 @@
 /* Slider Controls */
 .slider-control {
     position: absolute;
-    top: 50%;
+    top: 39%;
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 24px;
