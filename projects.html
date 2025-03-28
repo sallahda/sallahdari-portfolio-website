@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="assets/css/projects.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -55,6 +56,31 @@
 						<section class="wrapper style5">
 							<div class="inner">
 								<div class="projects-grid">
+									<!-- Hephaestus Project -->
+									<div class="project-item" data-category="cloud web">
+										<div class="project-card">
+											<div class="project-image">
+												<img src="./images/projects/hephaestus/hephaestus_hosting_diagram.png" alt="Hephaestus Architecture"/>
+												<div class="project-overlay">
+													<div class="project-links">
+														<!-- Private repository - no GitHub link -->
+														<a href="#" class="project-view-details" data-project="hephaestus">View Details</a>
+													</div>
+												</div>
+											</div>
+											<div class="project-info">
+												<h3>Hephaestus Project</h3>
+												<p>Smart wardrobe assistant with AWS cloud infrastructure using Terraform IaC. Implemented API endpoints and CI/CD pipeline for automated deployments.</p>
+												<div class="tech-stack">
+													<span>AWS</span>
+													<span>Terraform</span>
+													<span>CI/CD</span>
+													<span>REST API</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
 									<!-- Portfolio Website Project -->
 									<div class="project-item" data-category="cloud web">
 										<div class="project-card">
@@ -116,6 +142,56 @@
 					</article>
 
 				<!-- Project Details Modals -->
+				<div class="project-modal-container" id="hephaestus-modal">
+					<div class="project-modal">
+						<div class="modal-header">
+							<h2>Hephaestus Project</h2>
+							<span class="modal-close">&times;</span>
+						</div>
+						<div class="modal-content">
+							<div class="modal-images">
+								<div class="modal-image-container">
+									<img src="./images/projects/hephaestus/hephaestus_hosting_diagram.png" alt="Hosting Diagram" class="zoomable-image"/>
+								</div>
+								<div class="modal-image-container">
+									<img src="./images/projects/hephaestus/hephaestus_landing.png" alt="Landing Page" class="zoomable-image"/>
+								</div>
+								<div class="modal-image-container">
+									<img src="./images/projects/hephaestus/hephaestus_profile.png" alt="Profile Page" class="zoomable-image"/>
+								</div>
+								<div class="modal-image-container">
+									<img src="./images/projects/hephaestus/hephaestus_timeline.png" alt="Timeline Page" class="zoomable-image"/>
+								</div>
+							</div>
+							<div class="modal-description">
+								<h3>Project Overview</h3>
+								<p>Hephaestus is a smart wardrobe assistant developed as a school project where I took responsibility for key components of the infrastructure and backend development. The platform helps users organize and manage their clothing inventory in a streamlined digital environment.</p>
+								
+								<h3>Technical Details</h3>
+								<ul>
+									<li><strong>Cloud Infrastructure:</strong> Designed and implemented the AWS hosting architecture using Terraform as Infrastructure as Code</li>
+									<li><strong>API Development:</strong> Created RESTful API endpoints for the Timeline and Profile features</li>
+									<li><strong>CI/CD:</strong> Implemented continuous integration and deployment pipeline for automated releases</li>
+									<li><strong>Deployment:</strong> Managed the complete deployment process to AWS cloud environment</li>
+								</ul>
+								
+								<h3>Key Contributions</h3>
+								<ul>
+									<li>Architected cloud infrastructure for scalability and performance</li>
+									<li>Wrote Infrastructure as Code using Terraform to ensure consistent deployments</li>
+									<li>Developed backend APIs for user profiles and activity timeline functionality</li>
+									<li>Created CI/CD pipeline for streamlined development workflow</li>
+								</ul>
+								
+								<!-- Private repository - no links -->
+								<div class="modal-links">
+									<span class="button small">Private Repository</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div class="project-modal-container" id="portfolio-website-modal">
 					<div class="project-modal">
 						<div class="modal-header">
@@ -125,13 +201,13 @@
 						<div class="modal-content">
 							<div class="modal-images">
 								<div class="modal-image-container">
-									<img src="./images/projects/portfolio_website/hosting_diagram.png" alt="Hosting Diagram"/>
+									<img src="./images/projects/portfolio_website/hosting_diagram.png" alt="Hosting Diagram" class="zoomable-image"/>
 								</div>
 								<div class="modal-image-container">
-									<img src="./images/projects/portfolio_website/portfolio_index.jpg" alt="Index page"/>
+									<img src="./images/projects/portfolio_website/portfolio_index.jpg" alt="Index page" class="zoomable-image"/>
 								</div>
 								<div class="modal-image-container">
-									<img src="./images/projects/portfolio_website/portfolio_skills.jpg" alt="Skills page"/>
+									<img src="./images/projects/portfolio_website/portfolio_skills.jpg" alt="Skills page" class="zoomable-image"/>
 								</div>
 							</div>
 							<div class="modal-description">
@@ -172,13 +248,13 @@
 						<div class="modal-content">
 							<div class="modal-images">
 								<div class="modal-image-container">
-									<img src="./images/projects/realtime_election_project/system-architecture2.png" alt="System Architecture"/>
+									<img src="./images/projects/realtime_election_project/system-architecture2.png" alt="System Architecture" class="zoomable-image"/>
 								</div>
 								<div class="modal-image-container">
-									<img src="./images/projects/realtime_election_project/system-architecture.png" alt="System Architecture Diagram"/>
+									<img src="./images/projects/realtime_election_project/system-architecture.png" alt="System Architecture Diagram" class="zoomable-image"/>
 								</div>
 								<div class="modal-image-container">
-									<img src="./images/projects/realtime_election_project/cloud_architecture.png" alt="Cloud Architecture Diagram"/>
+									<img src="./images/projects/realtime_election_project/cloud_architecture.png" alt="Cloud Architecture Diagram" class="zoomable-image"/>
 								</div>
 							</div>
 							<div class="modal-description">
@@ -205,6 +281,23 @@
 									<a href="https://github.com/sallahda/realtime-election-data-project" target="_blank" class="button primary small">GitHub Repository</a>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Image Viewer Modal -->
+				<div id="image-viewer-modal" class="image-viewer-container">
+					<span class="close-viewer">&times;</span>
+					<div class="image-viewer-content">
+						<div class="viewer-navigation">
+							<button class="nav-btn prev-btn">&lt;</button>
+							<div class="main-image-container">
+								<img id="fullscreen-image" class="viewer-image">
+							</div>
+							<button class="nav-btn next-btn">&gt;</button>
+						</div>
+						<div class="image-thumbnails-container">
+							<!-- Thumbnails will be added dynamically by JavaScript -->
 						</div>
 					</div>
 				</div>
