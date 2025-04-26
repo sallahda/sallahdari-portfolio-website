@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Sallah Dari - Portfolio</title>
@@ -11,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="assets/css/projects.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -42,50 +38,268 @@
 					<article id="main">
 						<header>
 							<h2>Projects</h2>
-							<p>Created personal project to increase data/cloud knowledge</p>
+							<p>Building innovative solutions with cloud and data technologies</p>
 						</header>
-						<section class="wrapper style5">
-							<div class="project-card">
-								<div class="project-sidebar">
-									<h3>Portfolio - Hosting Layer</h3>
-									<p>This portfolio website, fully hosted on AWS, showcases my technical skills and projects. It uses Route53 for domain management, S3 for static hosting, and CloudFront for fast content delivery + GitHub Actions Pipeline for new code changes.</p>
-									<p><a href="https://github.com/sallahda/sallahdari-portfolio-website" target="_blank">View on GitHub</a></p>
-								</div>
-								<div class="project-main">
-									<div class="image-wrapper" id="slider1">
-										<img src="./images/projects/portfolio_website/hosting_diagram.png" alt="Hosting Diagram"/>
-										<img src="./images/projects/portfolio_website/portfolio_index.jpg" alt="Index page"/>
-										<img src="./images/projects/portfolio_website/portfolio_skills.jpg" alt="Skills page"/>
-									</div>
-									<div class="slider-control left" onclick="moveSlide(-1, 'slider1')">&#10094;</div>
-									<div class="slider-control right" onclick="moveSlide(1, 'slider1')">&#10095;</div>
+						
+						<!-- Project Filters -->
+						<section class="project-filters wrapper style5">
+							<div class="inner">
+								<div class="filter-container">
+									<button class="filter-btn active" data-filter="all">All Projects</button>
+									<button class="filter-btn" data-filter="cloud">Cloud</button>
+									<button class="filter-btn" data-filter="data">Data Engineering</button>
+									<button class="filter-btn" data-filter="web">Web Development</button>
 								</div>
 							</div>
-							<br>
-							<div class="project-card">
-								<div class="project-sidebar">
-									<h3>Realtime Election Data Project</h3>
-									<p>This was a personal data project focused on Data Engineering working with popular big data techniques and tools like Streaming, Apache Kafka, Apache Spark and PostgreSQL. Works locally with Docker or use the provided Terraform file to deploy to AWS.</p>
-									<p><a href="https://github.com/sallahda/realtime-election-data-project" target="_blank">View on GitHub</a></p>
-								</div>
-								<div class="project-main">
-									<div class="image-wrapper" id="slider2">
-										<!-- <img src="./images/projects/realtime_election_project/streamlit_dashboard.png" alt="Streamlit Dashboard"/> -->
-										<img src="./images/projects/realtime_election_project/system-architecture2.png" alt="System Architecture Diagram"/>
-										<img src="./images/projects/realtime_election_project/system-architecture.png" alt="System Architecture Diagram"/>
-										<img src="./images/projects/realtime_election_project/cloud_architecture.png" alt="Cloud Architecture Diagram"/>
-									</div>
-									<div class="slider-control left" onclick="moveSlide(-1, 'slider2')">&#10094;</div>
-									<div class="slider-control right" onclick="moveSlide(1, 'slider2')">&#10095;</div>
-								</div>
-							</div>
-							
-							
-							<p style="text-align: center;">More currently in the pipeline....... &#128521;</p>
-										
 						</section>
-
+						
+						<section class="wrapper style5">
+							<div class="inner">
+								<div class="projects-grid">
+									<!-- Hephaestus Project -->
+									<div class="project-item" data-category="cloud web">
+										<div class="project-card">
+											<div class="project-image">
+												<img src="./images/projects/hephaestus/hephaestus_hosting_diagram.png" alt="Hephaestus Architecture"/>
+												<div class="project-overlay">
+													<div class="project-links">
+														<!-- Private repository - no GitHub link -->
+														<a href="#" class="project-view-details" data-project="hephaestus">View Details</a>
+													</div>
+												</div>
+											</div>
+											<div class="project-info">
+												<h3>Hephaestus Project</h3>
+												<p>Smart wardrobe assistant with AWS cloud infrastructure using Terraform IaC. Implemented API endpoints and CI/CD pipeline for automated deployments.</p>
+												<div class="tech-stack">
+													<span>AWS</span>
+													<span>Terraform</span>
+													<span>CI/CD</span>
+													<span>REST API</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<!-- Portfolio Website Project -->
+									<div class="project-item" data-category="cloud web">
+										<div class="project-card">
+											<div class="project-image">
+												<img src="./images/projects/portfolio_website/hosting_diagram.png" alt="Portfolio Website Architecture"/>
+												<div class="project-overlay">
+													<div class="project-links">
+														<a href="https://github.com/sallahda/sallahdari-portfolio-website" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+														<a href="#" class="project-view-details" data-project="portfolio-website">View Details</a>
+													</div>
+												</div>
+											</div>
+											<div class="project-info">
+												<h3>Portfolio Website</h3>
+												<p>Personal portfolio with AWS hosting architecture using CloudFront, S3, and Route53. Includes CI/CD with GitHub Actions.</p>
+												<div class="tech-stack">
+													<span>AWS</span>
+													<span>CloudFront</span>
+													<span>S3</span>
+													<span>GitHub Actions</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<!-- Realtime Election Data Project -->
+									<div class="project-item" data-category="data">
+										<div class="project-card">
+											<div class="project-image">
+												<img src="./images/projects/realtime_election_project/system-architecture2.png" alt="Election Data Architecture"/>
+												<div class="project-overlay">
+													<div class="project-links">
+														<a href="https://github.com/sallahda/realtime-election-data-project" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+														<a href="#" class="project-view-details" data-project="election-data">View Details</a>
+													</div>
+												</div>
+											</div>
+											<div class="project-info">
+												<h3>Realtime Election Data Project</h3>
+												<p>Data engineering project utilizing streaming technology with Apache Kafka, Spark and PostgreSQL. Deployable locally via Docker or on AWS with Terraform.</p>
+												<div class="tech-stack">
+													<span>Kafka</span>
+													<span>Spark</span>
+													<span>PostgreSQL</span>
+													<span>Terraform</span>
+													<span>Docker</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								<div class="coming-soon">
+									<h3>More Projects Coming Soon</h3>
+									<p>Currently working on exciting new projects in cloud infrastructure, data pipelines, and web applications.</p>
+									<p>Check back soon or follow me on <a href="https://github.com/sallahda" target="_blank">GitHub</a> for updates!</p>
+								</div>
+							</div>
+						</section>
 					</article>
+
+				<!-- Project Details Modals -->
+				<div class="project-modal-container" id="hephaestus-modal">
+					<div class="project-modal">
+						<div class="modal-header">
+							<h2>Hephaestus Project</h2>
+							<span class="modal-close">&times;</span>
+						</div>
+						<div class="modal-content">
+							<div class="modal-images">
+								<div class="modal-image-container">
+									<img src="./images/projects/hephaestus/hephaestus_hosting_diagram.png" alt="Hosting Diagram" class="zoomable-image"/>
+								</div>
+								<div class="modal-image-container">
+									<img src="./images/projects/hephaestus/hephaestus_landing.png" alt="Landing Page" class="zoomable-image"/>
+								</div>
+								<div class="modal-image-container">
+									<img src="./images/projects/hephaestus/hephaestus_profile.png" alt="Profile Page" class="zoomable-image"/>
+								</div>
+								<div class="modal-image-container">
+									<img src="./images/projects/hephaestus/hephaestus_timeline.png" alt="Timeline Page" class="zoomable-image"/>
+								</div>
+							</div>
+							<div class="modal-description">
+								<h3>Project Overview</h3>
+								<p>Hephaestus is a smart wardrobe assistant developed as a school project where I took responsibility for key components of the infrastructure and backend development. The platform helps users organize and manage their clothing inventory in a streamlined digital environment.</p>
+								
+								<h3>Technical Details</h3>
+								<ul>
+									<li><strong>Cloud Infrastructure:</strong> Designed and implemented the AWS hosting architecture using Terraform as Infrastructure as Code</li>
+									<li><strong>API Development:</strong> Created RESTful API endpoints for the Timeline and Profile features</li>
+									<li><strong>CI/CD:</strong> Implemented continuous integration and deployment pipeline for automated releases</li>
+									<li><strong>Deployment:</strong> Managed the complete deployment process to AWS cloud environment</li>
+								</ul>
+								
+								<h3>Key Contributions</h3>
+								<ul>
+									<li>Architected cloud infrastructure for scalability and performance</li>
+									<li>Wrote Infrastructure as Code using Terraform to ensure consistent deployments</li>
+									<li>Developed backend APIs for user profiles and activity timeline functionality</li>
+									<li>Created CI/CD pipeline for streamlined development workflow</li>
+								</ul>
+								
+								<!-- Private repository - no links -->
+								<div class="modal-links">
+									<span class="button small">Private Repository</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-modal-container" id="portfolio-website-modal">
+					<div class="project-modal">
+						<div class="modal-header">
+							<h2>Portfolio Website</h2>
+							<span class="modal-close">&times;</span>
+						</div>
+						<div class="modal-content">
+							<div class="modal-images">
+								<div class="modal-image-container">
+									<img src="./images/projects/portfolio_website/hosting_diagram.png" alt="Hosting Diagram" class="zoomable-image"/>
+								</div>
+								<div class="modal-image-container">
+									<img src="./images/projects/portfolio_website/portfolio_index.jpg" alt="Index page" class="zoomable-image"/>
+								</div>
+								<div class="modal-image-container">
+									<img src="./images/projects/portfolio_website/portfolio_skills.jpg" alt="Skills page" class="zoomable-image"/>
+								</div>
+							</div>
+							<div class="modal-description">
+								<h3>Project Overview</h3>
+								<p>This portfolio website demonstrates my web development skills and showcases my technical expertise in cloud hosting and CI/CD. The site is fully hosted on AWS with an automated deployment pipeline.</p>
+								
+								<h3>Technical Details</h3>
+								<ul>
+									<li><strong>Frontend:</strong> HTML5, CSS3, JavaScript with responsive design</li>
+									<li><strong>AWS Services:</strong> Route53 for domain management, S3 for static hosting, CloudFront for content delivery</li>
+									<li><strong>CI/CD:</strong> GitHub Actions workflow for automated deployment</li>
+									<li><strong>Infrastructure:</strong> Static website hosting pattern with global content delivery</li>
+								</ul>
+								
+								<h3>Key Features</h3>
+								<ul>
+									<li>Responsive design that works across all devices</li>
+									<li>Fast loading times through CloudFront CDN</li>
+									<li>Automated deployments on code changes</li>
+									<li>High availability and reliability through AWS infrastructure</li>
+								</ul>
+								
+								<div class="modal-links">
+									<a href="https://github.com/sallahda/sallahdari-portfolio-website" target="_blank" class="button primary small">GitHub Repository</a>
+									<a href="https://www.sallahdari.com" target="_blank" class="button small">Live Website</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-modal-container" id="election-data-modal">
+					<div class="project-modal">
+						<div class="modal-header">
+							<h2>Realtime Election Data Project</h2>
+							<span class="modal-close">&times;</span>
+						</div>
+						<div class="modal-content">
+							<div class="modal-images">
+								<div class="modal-image-container">
+									<img src="./images/projects/realtime_election_project/system-architecture2.png" alt="System Architecture" class="zoomable-image"/>
+								</div>
+								<div class="modal-image-container">
+									<img src="./images/projects/realtime_election_project/system-architecture.png" alt="System Architecture Diagram" class="zoomable-image"/>
+								</div>
+								<div class="modal-image-container">
+									<img src="./images/projects/realtime_election_project/cloud_architecture.png" alt="Cloud Architecture Diagram" class="zoomable-image"/>
+								</div>
+							</div>
+							<div class="modal-description">
+								<h3>Project Overview</h3>
+								<p>This data engineering project focuses on processing and analyzing election data in real-time. It leverages Apache Kafka for data streaming, Apache Spark for processing, and PostgreSQL for data storage.</p>
+								
+								<h3>Technical Details</h3>
+								<ul>
+									<li><strong>Data Streaming:</strong> Apache Kafka for real-time data ingestion</li>
+									<li><strong>Processing:</strong> Apache Spark for distributed data processing</li>
+									<li><strong>Storage:</strong> PostgreSQL for structured data storage</li>
+									<li><strong>Deployment:</strong> Docker for local deployment, Terraform for AWS deployment</li>
+								</ul>
+								
+								<h3>Key Features</h3>
+								<ul>
+									<li>Real-time data processing pipeline</li>
+									<li>Fault-tolerant architecture with data replication</li>
+									<li>Scalable design that can handle varying data volumes</li>
+									<li>Flexible deployment options (local or cloud)</li>
+								</ul>
+								
+								<div class="modal-links">
+									<a href="https://github.com/sallahda/realtime-election-data-project" target="_blank" class="button primary small">GitHub Repository</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Image Viewer Modal -->
+				<div id="image-viewer-modal" class="image-viewer-container">
+					<span class="close-viewer">&times;</span>
+					<div class="image-viewer-content">
+						<div class="viewer-navigation">
+							<button class="nav-btn prev-btn">&lt;</button>
+							<div class="main-image-container">
+								<img id="fullscreen-image" class="viewer-image">
+							</div>
+							<button class="nav-btn next-btn">&gt;</button>
+						</div>
+						<div class="image-thumbnails-container">
+						</div>
+					</div>
+				</div>
 
 				<!-- Footer -->
 				<footer id="footer">
@@ -101,7 +315,6 @@
 
 			</div>
 
-		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -110,5 +323,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/projects.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 	</body>
 </html>

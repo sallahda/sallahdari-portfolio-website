@@ -49,56 +49,113 @@
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>About Me<br/></h2>
-								<!-- Interactive Timeline -->
-								<section class="timeline">
-									<div class="container left">
-										<div class="timeline-entry">
-											<h2>July, 2021</h2>
-											<p>Began Software Engineering Degree at Amsterdam Unversity of Applied Sciences. 📚</p>
-										</div>
-									</div>
-									<div class="container right">
-										<div class="timeline-entry">
-											<h2>September, 2023</h2>
-											<p>Internship @ Schuberg Philis as a Mission Critical AWS Engineer for a big bank in the Netherlands. Became AWS Certified!</p>
-										</div>
-									</div>
-									<div class="container left">
-										<div class="timeline-entry">
-											<h2>February, 2024</h2>
-											<p>Started as a parttime Work Student Mission Critical AWS Engineer focusing on developing scalable ETL data pipelines on AWS using services like AWS Lambda, Glue, Terraform and Apache Airflow.</p>
-										</div>
-									</div>
-									<div class="container right">
-										<div class="timeline-entry">
-											<h2>2024</h2>
-											<p>Portfolio website project and various personal projects focused on data engineering, DevOps and AWS Cloud Solutions.📈</p>
-										</div>
-									</div>
-								</section>
+								<h2>About Me</h2>
+								<p class="about-intro">
+									AWS Certified Cloud Engineer passionate about cloud infrastructure, 
+									data engineering, and creating scalable solutions.
+								</p>
 							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
+							
+							<!-- Expertise Cards - Replaced Timeline -->
+							<div class="expertise-container">
+								<div class="expertise-card">
+									<div class="expertise-icon">
+										<i class="fas fa-cloud"></i>
+									</div>
+									<h3>Cloud Engineering</h3>
+									<p>Specialized in AWS infrastructure, leveraging services like Lambda, Glue, and S3 to build scalable cloud solutions.</p>
+									<div class="expertise-tags">
+										<span>AWS</span>
+										<span>Terraform</span>
+										<span>IAC</span>
+									</div>
+								</div>
+								
+								<div class="expertise-card">
+									<div class="expertise-icon">
+										<i class="fas fa-database"></i>
+									</div>
+									<h3>Data Engineering</h3>
+									<p>Building automated ETL pipelines and data workflows using Apache Airflow, AWS Glue, and other modern data tools.</p>
+									<div class="expertise-tags">
+										<span>ETL</span>
+										<span>Airflow</span>
+										<span>Pipelines</span>
+									</div>
+								</div>
+								
+								<div class="expertise-card">
+									<div class="expertise-icon">
+										<i class="fas fa-code"></i>
+									</div>
+									<h3>Software Development</h3>
+									<p>Creating full-stack applications using Vue.js, Java Spring, and other modern frameworks and languages.</p>
+									<div class="expertise-tags">
+										<span>JavaScript</span>
+										<span>Java</span>
+										<span>Python</span>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Journey Section -->
+							<div class="journey-section">
+								<h3>My Journey</h3>
+								<div class="journey-timeline">
+									<div class="journey-item alternate">
+										<div class="journey-date">2021</div>
+										<div class="journey-content">
+											<h4>Began Software Engineering Degree</h4>
+											<p>Amsterdam University of Applied Sciences</p>
+										</div>
+									</div>
+									
+									<div class="journey-item alternate">
+										<div class="journey-date">2023</div>
+										<div class="journey-content">
+											<h4>AWS Certified Cloud Practitioner</h4>
+											<p>Validated expertise in AWS fundamentals and services</p>
+										</div>
+									</div>
+									
+									<div class="journey-item alternate">
+										<div class="journey-date">2023</div>
+										<div class="journey-content">
+											<h4>AWS Engineer Internship</h4>
+											<p>Mission-critical cloud engineering for a major financial institution</p>
+										</div>
+									</div>
+									
+									<div class="journey-item alternate">
+										<div class="journey-date">2024</div>
+										<div class="journey-content">
+											<h4>Work Student AWS Engineer</h4>
+											<p>Developing scalable data pipelines for enterprise workflows</p>
+										</div>
+									</div>
+									
+									<div class="journey-item alternate">
+										<div class="journey-date">2024-2025</div>
+										<div class="journey-content">
+											<h4>Graduation Internship</h4>
+											<p>Applying cloud and data engineering expertise in a professional setting</p>
+										</div>
+									</div>
+									
+									<div class="journey-item alternate">
+										<div class="journey-date">2025</div>
+										<div class="journey-content">
+											<h4>Software Engineering Graduate</h4>
+											<p>Successfully completed degree with focus on cloud and data technologies</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</section>
 
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="images/webdev.jpg" alt="" /></div><div class="content">
-								<h2>Web Development</h2>
-								<p style="color: white;">
-									In web development, I'm passionate about using JavaScript with Vue.js for creating 
-									interactive and dynamic web applications. Additionally, I enjoy working with Java 
-									using Spring for backend development, focusing on building robust and efficient 
-									server-side functionalities for websites and applications.
-								</p>							
-							</div>
-						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/aws-cloud.png" alt="" /></div><div class="content">
 								<h2>Cloud DevOps</h2>
@@ -108,6 +165,27 @@
 									to use cloud platforms like AWS to handle and process data effectively, all while 
 									ensuring smooth operations for projects.
 								</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/data-engineering.jpg" alt="Data Engineering" /></div><div class="content">
+								<h2>Data Engineering</h2>
+								<p style="color: white;">
+									Passionate about transforming raw data into actionable insights through efficient 
+									pipelines and workflows. I specialize in building ETL processes using AWS Glue, Lambda,
+									and Apache Airflow, creating scalable solutions that handle large data volumes with ease.
+								</p>							
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/webdev.jpg" alt="" /></div><div class="content">
+								<h2>Web Development</h2>
+								<p style="color: white;">
+									In web development, I'm passionate about using JavaScript with Vue.js for creating 
+									interactive and dynamic web applications. Additionally, I enjoy working with Java 
+									using Spring for backend development, focusing on building robust and efficient 
+									server-side functionalities for websites and applications.
+								</p>							
 							</div>
 						</section>
 					</section>
@@ -134,5 +212,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!-- Font Awesome for icons -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 	</body>
 </html>
